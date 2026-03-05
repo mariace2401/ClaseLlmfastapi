@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LLM Frontend</title>
+    <style>
+      body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial; padding: 24px; }
+      textarea { width: 100%; max-width: 800px; font-size: 14px; }
+      button { margin-top: 8px; padding: 8px 12px; }
+      #resultado { margin-top: 16px; white-space: pre-wrap; background:#f6f6f6; padding:12px; border-radius:6px; max-width:800px }
+    </style>
+  </head>
+  <body>
+    <h1>Interfaz LLM</h1>
+    <form id="llm-form">
+      <label for="pregunta">Pregunta:</label>
+      <br />
+      <textarea id="pregunta" rows="6" placeholder="Escribe tu pregunta aquí..."></textarea>
+      <br />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado" aria-live="polite"></div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
